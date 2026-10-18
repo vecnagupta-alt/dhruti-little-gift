@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160b16">
+<title>A Little Gift for My Jaan 💗</title>
+<style>
+:root{--rose:#ffb6c9;--pink:#ff6f9f;--cream:#fff1f4;--night:#160b16}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#49213d 0%,#1d101e 45%,#0b0810 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+#stars,.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.65;animation:twinkle 3s infinite ease-in-out}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.5)}}
+.heart{position:absolute;bottom:-35px;color:#ff8fb2;opacity:.65;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1}
+section{min-height:100svh;padding:76px 22px;display:flex;align-items:center;justify-content:center;text-align:center}
+.wrap{width:min(760px,100%);margin:auto}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:5px;text-transform:uppercase;color:#ffc3d3}
+h1,h2{font-weight:normal;margin:18px 0}
+h1{font-size:clamp(42px,10vw,82px);line-height:1.02;letter-spacing:-2px}
+h2{font-size:clamp(32px,7vw,55px)}
+p{font-size:17px;line-height:1.85;color:#f6dce5}
+.script{font-style:italic;color:#ffb6c9}
+.btn{border:1px solid #ffb6c9;background:linear-gradient(135deg,#ffb6c9,#d9588b);color:#2a1020;padding:14px 23px;border-radius:999px;font:600 13px Arial,sans-serif;letter-spacing:1px;cursor:pointer;box-shadow:0 0 28px #ff6f9f28;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 35px #ff6f9f65}
+.ghost{background:transparent;color:#ffe9ef;margin:8px}
+.glow{font-size:44px;filter:drop-shadow(0 0 20px #ff7ba8);animation:pulse 2.2s infinite}
+@keyframes pulse{50%{transform:scale(1.12);filter:drop-shadow(0 0 32px #ff7ba8)}}
+.divider{width:80px;height:1px;background:linear-gradient(90deg,transparent,#ffb6c9,transparent);margin:28px auto}
+.photo-frame{max-width:420px;margin:25px auto 0;padding:9px;border:1px solid #ffb6c967;border-radius:18px;background:#ffffff08;box-shadow:0 20px 70px #0008,0 0 30px #ff78a51a;transform:rotate(-1deg)}
+.photo-frame img{display:block;width:100%;max-height:64svh;object-fit:contain;border-radius:12px;background:#100a10}
+.caption{font:10px Arial,sans-serif;letter-spacing:3px;color:#ffc1d2;margin:15px 0 6px}
+.card{border:1px solid #ffb6c944;background:linear-gradient(145deg,#ffffff0d,#ffb6c908);border-radius:24px;padding:30px 23px;box-shadow:0 20px 60px #0003}
+.letter{font-size:18px;line-height:2}
+.hidden-message{display:none;margin-top:24px;animation:appear .8s ease}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+footer{padding:35px 15px;text-align:center;color:#d6a6b6;font:10px Arial,sans-serif;letter-spacing:3px;position:relative;z-index:1}
+.small{font:11px Arial,sans-serif;letter-spacing:2px;color:#e9b9ca}
+a{color:#ffd5e0}
+@media(min-width:700px){section{padding:90px 35px}.card{padding:42px}}
+</style>
+</head>
+<body>
+<div id="stars"></div><div class="petals" id="petals"></div>
+<main>
+<section id="home">
+ <div class="wrap">
+  <div class="eyebrow">A tiny gift, made with a whole heart</div>
+  <div class="glow" style="margin-top:30px">♡</div>
+  <h1>For my<br><span class="script">Chutankliiiiiii</span></h1>
+  <p>meri jaan, this little corner of the universe is just for you. 💗</p>
+  <div class="divider"></div>
+  <button class="btn" onclick="document.querySelector('#memory').scrollIntoView({behavior:'smooth'})">OPEN YOUR LITTLE GIFT ✨</button>
+  <p class="small" style="margin-top:35px">MADE WITH LOVE · ONLY FOR YOU</p>
+ </div>
+</section>
+<section id="memory">
+ <div class="wrap">
+  <div class="eyebrow">One of my favourite memories</div>
+  <h2>365 days with you <span class="script">♡</span></h2>
+  <p>Some moments deserve their own little place in the stars.</p>
+  <div class="photo-frame"><img src="assets/our-memory.jpg" alt="A special memory together"><div class="caption">YOU + ME · A LITTLE FOREVER</div></div>
+  <p class="small" style="margin-top:25px">A MEMORY I WANT TO KEEP CLOSE 💗</p>
+ </div>
+</section>
+<section id="letter">
+ <div class="wrap">
+  <div class="eyebrow">A letter for my jaan</div>
+  <h2>To my <span class="script">favourite person</span></h2>
+  <div class="card">
+   <div class="glow">💌</div>
+   <p class="letter">Meri pyaari Dhruti,<br><br>
+   tum meri life ka woh chhota sa sukoon ho jo ek normal din ko bhi special bana deta hai. Tumhari smile, tumhari cute si baatein, aur tumhara hona—mere liye bahut precious hai.<br><br>
+   Main chahta hoon ki tum hamesha yaad rakho: tum mere liye sirf special nahi, bahut zyada special ho. Yeh chhota sa gift bas tumhe yeh feel karane ke liye hai ki koi hai jo tumhe dil se cherish karta hai.<br><br>
+   <span class="script">Hamesha khush rehna, meri Chutankliiiiiii. 🫶🏻💗</span><br><br>
+   — Tumhara Aayush ♡</p>
+  </div>
+  <div style="margin-top:25px"><button class="btn" onclick="reveal()">ONE LAST LITTLE SURPRISE 💗</button></div>
+  <div class="hidden-message card" id="surprise">
+   <div class="glow">🧸💗</div>
+   <h2 style="font-size:34px">Oye meri jaan!</h2>
+   <p>Chahe kitne bhi busy days aa jaayein, I hope this page reminds you that you are loved, appreciated, and worth all the little efforts in the world. Thank you for being you. <span class="script">You are my favourite notification. ♡</span></p>
+   <p style="font-size:25px">I love you, Dhruti. 💗</p>
+  </div>
+ </div>
+</section>
+<section id="song">
+ <div class="wrap">
+  <div class="eyebrow">A song for this little moment</div>
+  <div class="glow">♫</div>
+  <h2><span class="script">Jab Tak</span></h2>
+  <p>For the song that belongs in this little moment. Tap below to listen on YouTube.</p>
+  <a class="btn" style="display:inline-block;text-decoration:none" href="https://www.youtube.com/results?search_query=Jab+Tak+Armaan+Malik+official" target="_blank" rel="noopener">PLAY “JAB TAK” 🎶</a>
+  <p class="small" style="margin-top:28px">TURN THE VOLUME UP A LITTLE ♡</p>
+  <div class="divider"></div>
+  <p>Made for you, meri jaan.<br><span class="script">— Aayush</span></p>
+  <button class="btn ghost" onclick="window.scrollTo({top:0,behavior:'smooth'})">BACK TO THE BEGINNING ↑</button>
+ </div>
+</section>
+</main>
+<footer>A LITTLE GIFT FOR DHRUTI · MADE WITH LOVE ♡</footer>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<75;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.animationDuration=(2+Math.random()*4)+'s';stars.appendChild(s)}
+function makeHeart(){let h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✧','💗'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*20)+'px';h.style.animationDuration=(8+Math.random()*8)+'s';document.getElementById('petals').appendChild(h);setTimeout(()=>h.remove(),17000)}
+setInterval(makeHeart,900);
+function reveal(){const el=document.getElementById('surprise');el.style.display='block';el.scrollIntoView({behavior:'smooth',block:'center'});for(let i=0;i<14;i++)setTimeout(makeHeart,i*100)}
+</script>
+</body>
+</html>
